@@ -1,0 +1,312 @@
+/*
+    BASE CSS RULES
+*/
+/* --------------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: none !important;
+    list-style: none;
+  }
+  
+  body {
+    color: #00000a;
+    background-image: url('../img/bg-site.fw.png');
+    line-height: 1.3;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden !important;
+    background-color: black;
+    background-size: contain;
+    background-repeat: repeat;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+  }
+
+  a {
+      text-decoration: none;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    word-spacing: 1px;
+    margin: 0;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container{
+      margin: 0px auto;
+      width: 76%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+  }
+
+  .text-white{
+      color: white;
+  }
+
+  .text-indigo{
+      color: indigo;
+  }
+
+  .title-3{
+    font-size: 3em;
+  }
+
+  .title-5{
+    font-size: 5em;
+  }
+
+  .text-center{
+      text-align: center;
+  }
+
+/* --------------------------------------------------------------- 
+
+    BOX CSS RULES
+
+--------------------------------------------------------------- */
+
+.box-30{
+    width: 30%;
+    height: auto;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    position: sticky;
+    float: left;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    z-index: 10;
+}
+
+.box-50{
+    width: 45%;
+    height: auto;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    position: sticky;
+    float: left;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    z-index: 10;
+}
+
+.box-70{
+    width: 70%;
+    height: auto;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    position: sticky;
+    float: left;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    z-index: 10;
+}
+
+.box-100{
+    width: 100%;
+    height: auto;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    position: sticky;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    z-index: 10;
+}
+
+/* ---------------------------------------------------------------
+
+    LAYOUT CSS RULES
+
+--------------------------------------------------------------- */
+
+.bg-top{
+    width: 100%;
+    height: 500px;
+    float: left;
+    z-index: 1;
+    background-image: url("../img/bg-top.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.header {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: rgba(34, 15, 59, 0.5);
+    z-index: 999999;
+    position: sticky;
+}
+
+.logo{
+    display: contents;
+    width: 191px;
+    height: 32px;
+    float: left;
+}
+
+.logo img{
+    max-width: 191px;
+}
+
+.menu {
+    display: block;
+    float: right;
+}
+
+.menu-item{
+    list-style: none;
+    float: right;
+    margin: 10px;
+}
+
+.menu-item a:link, .menu-item a:active, .menu-item a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-item a:hover{
+    color: tomato;
+    text-decoration: none;
+}
+
+.link-indigo:link, .link-indigo:active, .link-indigo:visited{
+    color: indigo;
+    text-decoration: none;
+}
+
+.link-indigo:hover{
+    color: tomato;
+    text-decoration: none;
+}
+
+.card {
+position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    border-radius: 10px;
+}
+
+.news {
+    color: #000;
+    font-weight: 600;
+}
+
+.news-img {
+    height: 250px;
+    width: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-author{
+    background-image: url(img/peterson.jpg);
+    width: 100%;
+    height: 610px;
+    float: left;
+    padding-top: 20px;
+    padding-left: 280px;
+    padding-right: 50px;
+    background-size: 260px;
+    background-position-x: left;
+    background-repeat: no-repeat;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-text {
+font-size: 1rem;
+line-height: 1.5;
+text-align: left;
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+-webkit-font-smoothing: antialiased;
+color: #000;
+font-weight: 600;
+box-sizing: border-box;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.card-body-height {
+    height: 7.5rem;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    padding: 14px;
+}
+
+.card-footer:last-child {
+    border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
+}
+.text-footer-size {
+    font-size: .8rem;
+}
+.bg-transparent {
+    background-color: transparent!important;
+}
+.card-footer {
+    padding: .75rem 1.25rem;
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+
+/* ---------------------------------------------------------------
+
+    FORM CSS RULES
+
+--------------------------------------------------------------- */
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
